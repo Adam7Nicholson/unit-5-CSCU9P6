@@ -1,4 +1,4 @@
-package mvcexample;//wengwong0506
+package mvcexample;//wengwong050601
 
 // Controller 2: displays views 3 and 4
 //               (displaying A and B components of the model)
