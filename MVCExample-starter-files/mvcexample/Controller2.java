@@ -1,4 +1,4 @@
-package mvcexample;//wengwong1
+package mvcexample;//weng
 
 // Controller 2: displays views 3 and 4
 //               (displaying A and B components of the model)
@@ -18,7 +18,7 @@ public class Controller2 extends JFrame
     private View4 view4;
     private JButton clearViews;   // For direct message to views
     private JButton refreshViews; // To prompt them to refresh their contents from the model
- 
+    private JButton ButtonB;//1
     // Constructor
     public Controller2(Model model) {
     
@@ -40,6 +40,14 @@ public class Controller2 extends JFrame
         refreshViews = new JButton("Refresh views");
         window.add(refreshViews);
         refreshViews.addActionListener(this);
+        
+        ButtonB = new JButton("Increment B");//2
+        window.add(ButtonB);//3
+        ButtonB.addActionListener(this);//4
+        
+        
+        
+        
         // Create views
         view3 = new View3(this, model);
         window.add(view3);
@@ -61,6 +69,9 @@ public class Controller2 extends JFrame
         if (e.getSource() == refreshViews) {
             view3.update();
             view4.update();
+        }
+        if (e.getSource() == ButtonB) {//5
+            model.modifyB();//6
         }
         
     } // actionPerformed

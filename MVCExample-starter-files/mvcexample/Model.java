@@ -1,4 +1,4 @@
-package mvcexample;
+package mvcexample;//weng
 
 // A database with two counter components
 
@@ -18,6 +18,13 @@ public class Model extends Observable {
         notifyObservers();         // Note: notifies ALL Observing views
         
     } // modifyA
+    public void modifyB() {        // Mutator method for A component//7
+        
+        dataBaseB++;//8
+        setChanged();//9
+        notifyObservers();  //10       // Note: notifies ALL Observing views
+        
+    } // modifyB//11
   
     public int getDataA() {
         
