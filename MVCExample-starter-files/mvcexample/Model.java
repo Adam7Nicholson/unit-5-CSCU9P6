@@ -1,4 +1,4 @@
-package mvcexample;//weng
+package mvcexample;//weng1
 
 // A database with two counter components
 
