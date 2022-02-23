@@ -58,11 +58,12 @@ public class Controller2 extends JFrame
             view3.clear();
             view4.clear();
         }
+        /**
         if (e.getSource() == refreshViews) {
             view3.update();
             view4.update();
         }
-        
+        **/
     } // actionPerformed
     
 } // class Controller2
