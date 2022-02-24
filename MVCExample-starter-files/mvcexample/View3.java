@@ -54,3 +54,4 @@ public class View3 extends JPanel implements Observer {
 
 
 
+

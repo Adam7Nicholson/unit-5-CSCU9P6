@@ -18,6 +18,13 @@ public class Model extends Observable {
         notifyObservers();         // Note: notifies ALL Observing views
         
     } // modifyA
+    public void modifyB() {        // Mutator method for A component//7
+        
+        dataBaseB++;//8
+        setChanged();//9
+        notifyObservers();  //10       // Note: notifies ALL Observing views
+        
+    } // modifyB
   
     public int getDataA() {
         
@@ -32,3 +39,4 @@ public class Model extends Observable {
     } // getDataB
   
 } // class Model
+
