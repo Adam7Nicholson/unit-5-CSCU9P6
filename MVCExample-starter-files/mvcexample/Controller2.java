@@ -66,7 +66,7 @@ public class Controller2 extends JFrame
             view3.clear();
             view4.clear();
         }
-        /*
+
         if (e.getSource() == refreshViews) {
             int a = model.getDataA();
             view3.update( o ,arg);
@@ -75,7 +75,7 @@ public class Controller2 extends JFrame
         if (e.getSource() == ButtonB) {//5
             model.modifyB();//6
         }
-        
+        **/
     } // actionPerformed
     
 } // class Controller2
