@@ -1,4 +1,4 @@
-package mvcexample;//weng1
+package mvcexample;
 
 // Controller 2: displays views 3 and 4
 //               (displaying A and B components of the model)
@@ -66,10 +66,12 @@ public class Controller2 extends JFrame
             view3.clear();
             view4.clear();
         }
+        /*
         if (e.getSource() == refreshViews) {
-            view3.update();
+            int a = model.getDataA();
+            view3.update( o ,arg);
             view4.update();
-        }
+        }*/
         if (e.getSource() == ButtonB) {//5
             model.modifyB();//6
         }
@@ -77,5 +79,6 @@ public class Controller2 extends JFrame
     } // actionPerformed
     
 } // class Controller2
+
 
 

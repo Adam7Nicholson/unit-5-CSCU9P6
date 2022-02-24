@@ -1,4 +1,4 @@
-package mvcexample;//weng1
+package mvcexample;
 
 // A database with two counter components
 
@@ -24,7 +24,7 @@ public class Model extends Observable {
         setChanged();//9
         notifyObservers();  //10       // Note: notifies ALL Observing views
         
-    } // modifyB//11
+    } // modifyB
   
     public int getDataA() {
         
@@ -39,3 +39,4 @@ public class Model extends Observable {
     } // getDataB
   
 } // class Model
+
